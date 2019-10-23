@@ -5,21 +5,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int a = scn.nextInt();
-        int b = a / 2;
-        boolean flag = true;
-        for (int i = 2; i <= b; i++) {
-            if (a % i == 0) {
-                flag = false;
-                break;
-            }
+        int sum = 0;
+        for (int i =1;i<=a;i++){
+            sum=sum+i*(i+1);
         }
-            if (flag){
-                System.out.println("YES");
-            }
-            else {
-                System.out.println("NO");
-            }
-
+        System.out.println(sum);
         }
     }
 
