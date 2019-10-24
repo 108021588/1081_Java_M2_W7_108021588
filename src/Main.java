@@ -31,13 +31,13 @@ public class Main {
                 ans = ans + z;
             }
         }
-        if (x>2){//剛剛質數那邊拿走了2、3、5，要補回來
+        if (x>=2){//剛剛質數那邊拿走了2、3、5，要補回來
             ans = ans+2;
         }
-        if (x>3){
+        if (x>=3){
             ans = ans+3;
         }
-        if (x>5){
+        if (x>=5){
             ans = ans+5;
         }
         System.out.println(ans);
